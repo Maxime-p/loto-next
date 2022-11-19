@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <Provider store={store}>
     <PersistGate persistor={persistor}>
       <Component {...pageProps} />
-      <Script>
+      <Script id="beforeUnload">
         {`window.addEventListener('beforeunload', (e) => {e.preventDefault();e.returnValue = '';})`}
       </Script>
     </PersistGate>
