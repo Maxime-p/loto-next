@@ -1,0 +1,23 @@
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 5px 3px;
+
+    div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 2px;
+
+        button {
+            padding: 8px 12px;
+        }
+    }
+}
+
+.colorModal {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}

@@ -1,0 +1,15 @@
+:root {
+    --selected: #02885C;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0 !important
+    }
+}

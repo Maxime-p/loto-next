@@ -1,0 +1,27 @@
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 1px solid black;
+    color: inherit;
+    background-color: transparent;
+    user-select: none;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.selected{
+    color: #fff;
+    background-color: var(--selected);
+}
+
+.last{
+    font-size: 60px;
+    animation: flash 1.5s ease-in 0s infinite alternate;
+}
+
+@keyframes flash {
+    from {opacity: 0.9;}
+    to {opacity: 0.4;}
+}
