@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import { Analytics } from "@vercel/analytics/react"
 import {Provider} from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
 import Script from 'next/script'
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Script id="beforeUnload">
         {`window.addEventListener('beforeunload', (e) => {e.preventDefault();e.returnValue = '';})`}
       </Script>
+      <Analytics/>
     </PersistGate>
   </Provider>
 }
